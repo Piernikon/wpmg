@@ -1,0 +1,44 @@
+# INSTRUKCJA INSTALACJI - Motyw Modelarnia Gdańska
+
+## Krok 1: Przygotowanie
+1. Sprawdź czy masz zainstalowane wymagane wtyczki:
+   - Advanced Custom Fields Pro
+   - Gravity Forms Pro
+   - Gravity Forms Google Drive Integration
+
+## Krok 2: Instalacja motywu  
+1. Rozpakuj ten plik ZIP
+2. W WordPress Admin przejdź do Wygląd → Motywy
+3. Kliknij "Dodaj nowy" → "Wyślij motyw"
+4. Wybierz folder "modelarnia-gdanska" lub spakuj go ponownie do ZIP
+5. Zainstaluj i aktywuj motyw
+
+## Krok 3: Import pól ACF
+1. Przejdź do Custom Fields → Tools
+2. Kliknij "Import Field Groups"  
+3. Wybierz plik "acf-export.json" z folderu motywu
+4. Kliknij "Import"
+
+## Krok 4: Konfiguracja strony głównej
+1. Utwórz nową stronę o nazwie "Strona główna"
+2. Zostaw treść pustą (sekcje dodasz przez ACF)
+3. Przejdź do Ustawienia → Czytanie
+4. Ustaw "Strona główna" jako stronę główną
+
+## Krok 5: Dodawanie treści
+1. Edytuj stronę główną
+2. Znajdź sekcję "Sekcje strony głównej" (ACF)
+3. Dodaj sekcje: Hero, O nas, Usługi, FAQ
+4. Wypełnij treści
+
+## Krok 6: Formularz kontaktowy
+1. Utwórz nowy formularz w Gravity Forms
+2. Dodaj pola: Imię, Email, Telefon, Opis, Upload plików
+3. Skonfiguruj Google Drive Integration
+4. Skopiuj shortcode formularza do sekcji kontakt
+
+## Pomoc techniczna
+W razie problemów skontaktuj się z deweloperem motywu.
+
+Data utworzenia: 2025-07-21 20:49:14
+Wersja: 1.0.0

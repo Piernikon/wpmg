@@ -1,0 +1,1 @@
+<?php // Security functions included in functions.php

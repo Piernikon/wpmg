@@ -1,0 +1,178 @@
+{
+  "field_groups": [
+    {
+      "key": "group_homepage_sections",
+      "title": "Sekcje strony głównej", 
+      "fields": [
+        {
+          "key": "field_homepage_sections",
+          "label": "Sekcje",
+          "name": "homepage_sections",
+          "type": "flexible_content",
+          "instructions": "Dodaj i zarządzaj sekcjami strony głównej",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "layouts": {
+            "hero_banner": {
+              "key": "layout_hero",
+              "name": "hero_banner", 
+              "label": "Sekcja Hero",
+              "display": "block",
+              "sub_fields": [
+                {
+                  "key": "field_hero_title",
+                  "label": "Tytuł główny",
+                  "name": "hero_title",
+                  "type": "text",
+                  "instructions": "",
+                  "required": 1,
+                  "default_value": "Modelarnia Gdańska"
+                },
+                {
+                  "key": "field_hero_subtitle",
+                  "label": "Podtytuł",
+                  "name": "hero_subtitle", 
+                  "type": "textarea",
+                  "default_value": "Profesjonalny druk 3D i modelowanie w Gdańsku"
+                },
+                {
+                  "key": "field_hero_cta_text",
+                  "label": "Tekst przycisku CTA",
+                  "name": "hero_cta_text",
+                  "type": "text",
+                  "default_value": "Sprawdź nasze usługi"
+                },
+                {
+                  "key": "field_hero_cta_link",
+                  "label": "Link CTA",
+                  "name": "hero_cta_link",
+                  "type": "url",
+                  "default_value": "#services"
+                }
+              ]
+            },
+            "about_section": {
+              "key": "layout_about",
+              "name": "about_section",
+              "label": "Sekcja O nas",
+              "sub_fields": [
+                {
+                  "key": "field_about_title",
+                  "label": "Tytuł",
+                  "name": "about_title",
+                  "type": "text",
+                  "default_value": "O Modelarni Gdańskiej"
+                },
+                {
+                  "key": "field_about_content",
+                  "label": "Treść",
+                  "name": "about_content",
+                  "type": "wysiwyg"
+                }
+              ]
+            },
+            "services_grid": {
+              "key": "layout_services",
+              "name": "services_grid",
+              "label": "Siatka usług",
+              "sub_fields": [
+                {
+                  "key": "field_services_title",
+                  "label": "Tytuł sekcji",
+                  "name": "services_title",
+                  "type": "text",
+                  "default_value": "Nasze usługi"
+                },
+                {
+                  "key": "field_services_items",
+                  "label": "Usługi",
+                  "name": "services_items",
+                  "type": "repeater",
+                  "sub_fields": [
+                    {
+                      "key": "field_service_title",
+                      "label": "Nazwa usługi",
+                      "name": "service_title",
+                      "type": "text"
+                    },
+                    {
+                      "key": "field_service_description", 
+                      "label": "Opis",
+                      "name": "service_description",
+                      "type": "textarea"
+                    },
+                    {
+                      "key": "field_service_price",
+                      "label": "Cena od",
+                      "name": "service_price", 
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            "faq_section": {
+              "key": "layout_faq",
+              "name": "faq_section",
+              "label": "Sekcja FAQ",
+              "sub_fields": [
+                {
+                  "key": "field_faq_title",
+                  "label": "Tytuł",
+                  "name": "faq_title",
+                  "type": "text",
+                  "default_value": "Często zadawane pytania"
+                },
+                {
+                  "key": "field_faq_items",
+                  "label": "Pytania i odpowiedzi",
+                  "name": "faq_items",
+                  "type": "repeater",
+                  "sub_fields": [
+                    {
+                      "key": "field_faq_question",
+                      "label": "Pytanie",
+                      "name": "faq_question",
+                      "type": "text"
+                    },
+                    {
+                      "key": "field_faq_answer",
+                      "label": "Odpowiedź", 
+                      "name": "faq_answer",
+                      "type": "wysiwyg"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "button_label": "Dodaj sekcję",
+          "min": "",
+          "max": ""
+        }
+      ],
+      "location": [
+        [
+          {
+            "param": "page_template",
+            "operator": "==",
+            "value": "front-page.php"
+          }
+        ]
+      ],
+      "menu_order": 0,
+      "position": "normal",
+      "style": "default",
+      "label_placement": "top",
+      "instruction_placement": "label",
+      "hide_on_screen": ["the_content"],
+      "active": true,
+      "description": "Sekcje dla strony głównej Modelarni Gdańskiej"
+    }
+  ]
+}
